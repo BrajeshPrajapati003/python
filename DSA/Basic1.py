@@ -99,3 +99,8 @@
 
 #! Count Odd Numbers in an Interval Range -> return (high+1)//2 - (low//2)
 
+#! num /= 10 -> float division can give (not int) wrong answer as this thing is different from Java 😁
+
+#! max(list) -> gives the maximum element of list
+#! sorted(nums) -> to sort the list nums
+
