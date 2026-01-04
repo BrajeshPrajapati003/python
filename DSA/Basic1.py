@@ -92,9 +92,10 @@
 
 # greet(name) # function calling
 
+# def add2Numbers(a, b):
+#     return a+b
 
-def add2Numbers(a, b):
-    return a+b
+# print(add2Numbers(2, 4))
 
-print(add2Numbers(2, 4))
+#! Count Odd Numbers in an Interval Range -> return (high+1)//2 - (low//2)
 
