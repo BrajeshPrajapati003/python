@@ -68,8 +68,17 @@ s = "-".join(list6) # his-is-string
 print(s)
 print(ord('a'))
 
-
 #! STRING, TUPLE  ->  IMMUTABLE
 
 
+# IMP: Remove Duplicates from Sorted Array II (same elements can occur at most twice)
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        k = 1
+        for i in range(2, len(nums)):
+            if nums[k-1] != nums[i]:
+                k += 1
+                nums[k] = nums[i]
+        return k+1
 
