@@ -282,3 +282,26 @@ s.index("d")  # 2
 - Negative indexing works everywhere
 
 
+
+Set
+
+- len(), add(), clear(), discard(), copy(), no indexing
+- set Operations, union(), intersection(), difference(), symmetric_difference()
+
+
+Dictionary
+
+- len(), pop(), items(), get(), copy(), keys(), values(), update(), clear()
+- get(key, default_value), setdefault(key, default)
+
+🧠 Dictionary Key Rules
+
+- Keys must be hashable
+- Keys compared using ==
+- If a == b and hash(a) == hash(b) → same key
+- 1, 1.0, True → ❗ same key
+- dict(key=value) → key is a string
+- pop() requires the exact key
+
+**“Python dictionary keys are compared by equality and hash value, so 1, 1.0, and True collide and overwrite each other.”**
+
