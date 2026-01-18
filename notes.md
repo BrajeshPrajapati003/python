@@ -305,3 +305,6 @@ Dictionary
 
 **“Python dictionary keys are compared by equality and hash value, so 1, 1.0, and True collide and overwrite each other.”**
 
+# In Python, you cannot assign to an index of an empty list like newArr[i] = count if that index doesn't exist yet. You would need to use newArr.append(count) or initialize the list first.
+
+
