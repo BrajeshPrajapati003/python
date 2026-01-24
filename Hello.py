@@ -47,7 +47,74 @@
 
                     # NOTE: Lists
 
-list = []
-print(type(list))
-l1 = [67, 43, 66, "brajesh", 43.00]
-print(l1)
+# list = []
+# print(type(list))
+# l1 = [67, 43, 66, "brajesh", 43.00]
+# print(l1)
+
+# print(l1*2) 
+
+# l2 = [3, 4, 5, 66]
+
+# print(l1 + l2) # append
+
+
+
+                    # Tuples
+
+t1 = (1, 2, "brajesh", True, 5+6j)
+l = [1, 2, "tyrant", False]
+
+# print(type(t1), type(l))
+
+# print(t1[2])
+# t1[2] = "tyrant" # Tuples are immutable 
+# l[2] = "brajesh"
+# print(l) # lists are mutable
+
+# print(t1.index("brajesh"))
+
+
+                                    # NOTE: Dictionaries
+
+# d = {1: "brajesh", 2: "prajapati"}
+
+# print(d[2])
+
+# d1 = {[1,2,3]:"brajesh"}
+# print(d1) # NOTE: TypeError -> (UNHASHABLE TYPE: 'LIST') can't use 'list' as a dict key : list is mutable
+
+
+# d2 = {(1,2,3): "brajesh"}
+# print(d2) # NOTE: tuple is immutable hence no error
+
+# d3 = {{1,2,3}: "brajesh"}
+# print(d3) # NOTE: dict & set ares also unhashable types
+
+
+                                        # NOTE: Exception Handling
+
+
+# try:
+#     a=4
+#     b=0
+#     print(a/b)
+# except Exception as e:
+#     print("Exception occured!", "Exception: ", e)
+# finally:
+#     print("Finally getting executed!!!")
+
+
+
+# ls = [43, 66, 67]
+# for i in ls: # for else loop
+#     print(i)
+#     if i == 67:
+#         break
+# else:
+#     print("For executed Successfully")
+
+
+                                        # NOTE: OOPS PROGRAMMING
+
+
