@@ -265,12 +265,14 @@ s[::-1]    # reverse string
 - index(sub) → returns index or raises error
   
 ```
-s = "coding"
+s = "world coding is a world in another world"
 
-s.find("d")   # 2
+s.find("d")   # 4
 s.find("x")   # -1
+s.replace(world, earth, 1) # replaces only one(first) occurence
+s.replace(world, wow) # replaces all occurences
 
-s.index("d")  # 2
+s.index("d")  # 4
 # s.index("x") → ValueError
 ```
 
@@ -309,3 +311,26 @@ Dictionary
 
 
 ***MRO (METHOD RESOLUTION ORDER)***
+
+
+**Escape Characters**
+
+- \` -> single quote (Tom\'s friend is a donkey) *
+- \\ -> backslash
+- /n -> new line *
+- \r -> carriage return
+- \t -> tab *
+- \b -> backspace *
+- \f -> form feed
+- \ooo -> octal value
+- \xhh -> hex value
+
+
+Q- print("Hello {name1} and {name2}".format(name1='foo', name2='bin))
+
+output:
+Hello foo and bin
+
+
+
+

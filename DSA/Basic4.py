@@ -127,16 +127,23 @@ set3 = {8, 2, 9, 6}
 
 # print(freq)
 
-s = "brajesh prajapati"
-freq = {}
+# s = "brajesh prajapati"
+# freq = {}
 
-for name in s:
-    if name not in freq:
-        freq[name] = 1
-    else:
-        freq[name] += 1
-print(freq) # or we can simply use getOrDefault()
+# for name in s:
+#     if name not in freq:
+#         freq[name] = 1
+#     else:
+#         freq[name] += 1
+# print(freq) # or we can simply use getOrDefault()
 
 # d.get("x")        # IMP: returns None if missing
 # d["x"]            # IMP: raises KeyError if missing
+
+
+
+# ! list comprehension
+ls = [1, 2, 3, 4, 5]
+new_ls = [num for num in ls if num % 2 == 0]
+print(new_ls) # [2, 4]
 
