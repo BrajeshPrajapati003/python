@@ -1,0 +1,1 @@
+{"name":"Local: BubbleSort","url":"d:\\python\\DSA\\BubbleSort.py","tests":[{"id":1771506308357,"input":"3 2 5 1 5 7 8","output":"1 2 3 5 5 7 8"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\python\\DSA\\BubbleSort.py","group":"local","local":true}

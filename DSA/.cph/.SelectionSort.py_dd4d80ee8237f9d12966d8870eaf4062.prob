@@ -1,0 +1,1 @@
+{"name":"Local: SelectionSort","url":"d:\\python\\DSA\\SelectionSort.py","tests":[{"id":1771507921622,"input":"9 8 7 6 5","output":"5 6 7 8 9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\python\\DSA\\SelectionSort.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: maxSumSubarray","url":"d:\\python\\cp\\maxSumSubarray.py","tests":[{"id":1771345515211,"input":"2 1 5 1 3 2\n3","output":"9"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\python\\cp\\maxSumSubarray.py","group":"local","local":true}

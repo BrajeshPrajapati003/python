@@ -118,3 +118,213 @@ l = [1, 2, "tyrant", False]
                                         # NOTE: OOPS PROGRAMMING
 
 
+# ! FUNCTIONS
+
+
+# def test():
+#     pass
+
+# test()
+
+# def fun1(a, b):
+#     print("a = ", a,"b = ",b)
+
+# fun1(43, 66)
+
+# fun1(b=43, a=67) # parameter order can be changed(value will be passed accn to their names)
+
+# def fun2(*args, email): # var args using asterisk
+#     print("var args: ", args)
+#     print("email: ", email)
+
+# fun2(43, True, 67, "BRAJESH", ["this", "is", "a", "list"], email="prajapatibrajesh003@gmail.com")
+
+
+# def fun3(**kargs): # var args with double asterisk takes only key value pairs as parameters as treats them as a dict
+#     print(kargs)
+#     print(type(kargs))
+
+# fun3(name="brajesh", surname="prajapati", role="student")
+
+
+# lambdaFunc = lambda a, b: a*b
+# print(lambdaFunc(4, 3))
+
+# square = lambda a: a**2
+# print(square(5))
+
+# lambda2 = lambda **kargs: print(kargs, type(kargs))
+
+# lambda2(brajesh=43, unknown=67, undefined=66)
+
+# def fun4(l):
+#     '''
+#     This is Docstring for fun4 -> it takes list as parameter and returns the list+2
+#     '''
+#     l1=[]
+#     for i in l:
+#         l1.append(i+2)
+#     return l1
+
+# print(fun4([43, 66, 67]))
+
+#! Class & Object
+
+
+# class Solution:
+#     def func1(self): # NOTE; self isn't a keyword here
+#         print("Solution class func1")
+
+# ob = Solution()
+# ob.func1()
+
+# class Solution2:
+#     def func1(meow):
+#         print("Solution2 Meow func")
+    
+# ob2 = Solution2()
+# ob2.func1()
+
+
+# class Solution3:
+#     classVariable = 'variable'
+
+#     def __init__(self, name, email):
+#         self.name = name
+#         self.email2 = email
+
+#     def show_mentor(self):
+#         print("Mentor name: ", self.show_mentor)
+    
+# ob3 = Solution3("brajesh", "prajapatibrajesh003@gmail.com")
+# print(ob3)
+# print(type(ob3))
+# ob3.show_mentor("brajesh")
+
+# print(ob3.classVariable)
+# print(ob3.name)
+# print(ob3.email) # AttributeError: ob3 has no attribute 'email'. email2 is known but not email
+
+
+#! INHERITANCE
+
+
+# class parent:
+#     def printParent(self):
+#         print("This is parent function")
+
+# class Child(parent):
+#     pass
+
+# child_ob = Child()
+# child_ob.printParent()
+
+
+# class mentor:
+
+#     def __init__(self, name, email, contact):
+#         self.name = name
+#         self.email = email
+#         self.contact = contact
+#         print("Calling mentor constructor")
+    
+#     def printDetails(self):
+#         print(self.name, self.email, self.contact)
+
+# class stud(mentor):
+#     def print(self):
+#         print("This is stud")
+
+#     def __init__(self):
+#         print("This is stud constructor")
+
+# ob = stud("brajesh", "prajapatibrajesh003@gmail.com", "93xxxxxxx")
+# print(ob.name)
+# print(ob.print())
+# print(ob.printDetails())
+
+
+# class super:
+#     def fun1(self):
+#         print("Super class function")
+    
+# class sub:
+#     def fun1(self):
+#         print("sub class function")
+
+# sub_ob = sub()
+# sub_ob.fun1
+
+
+
+# class A:
+#     def test(self):
+#         print("A")
+
+# class B(A):
+#     def test(self): # NOTE: Method Overriding
+#         print("B")
+#         super().test() # CTX: Calling the parent method using super
+    
+
+# ob = B()
+# ob.test()
+
+
+
+# CTX: Method Resolution Order (MRO) 
+
+# class A:
+#     def fun1(self):
+#         print("Class A method")
+
+# class B:
+#     def fun1(self):
+#         print("Class B method")
+    
+# class C(A, B):
+#     pass
+
+# class D(B, A):
+#     pass
+
+# ob = C()
+# obj = D()
+# ob.fun1() # No Ambiguity here -> it will print the method inherited from A
+# obj.fun1() # it will print the method inherited from B
+
+
+# CTX: private -> double underscore (__) -> accessed using _className__functionName
+
+# class A:
+#     def __privateFun(self):
+#         print("Class A's private function")
+
+# ob = A()
+# ob._A__privateFun()
+
+# CTX: protected -> single underscore (_) -> accessed using
+
+# class A:
+#     def _protectedFun(self):
+#         print("Class A's protected function")
+
+# ob = A()
+# ob._protectedFun()
+
+
+
+class A:
+    def __init__(self, salary, balance):
+        self.name = name # public variable -> accessible from anywhere
+        self._salary = salary # protected variable -> accessible outside the class, but discouraged
+        self.__balance = balance # private variable -> double underscore -> "name mangling"
+
+# NOTE: public -> APIs, services, reusable methods
+# NOTE: protected (_) -> internal helpers, extensible classes
+# NOTE: private (__) -> sensitive logic, internal state
+
+
+
+# IMP: Python doesn't have strict private variables. Python uses naming conventions & name mangling
+
