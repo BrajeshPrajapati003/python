@@ -3,3 +3,4 @@
 *.prob
 tempCodeRunnerFile.py
 *.vscode
+*.gitignore
