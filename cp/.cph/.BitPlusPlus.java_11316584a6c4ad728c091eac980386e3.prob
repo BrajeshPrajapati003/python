@@ -1,1 +1,0 @@
-{"name":"Local: BitPlusPlus","url":"d:\\python\\cp\\BitPlusPlus.java","tests":[{"id":1768571475981,"input":"1\n++X","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\python\\cp\\BitPlusPlus.java","group":"local","local":true}
