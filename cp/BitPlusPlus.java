@@ -15,6 +15,3 @@ public class BitPlusPlus{
         System.out.println(ans);
     }
 }
-
-
-
