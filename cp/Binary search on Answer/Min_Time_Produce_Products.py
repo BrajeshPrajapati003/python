@@ -11,7 +11,7 @@ def min_time(machines, goal):
 
     # max(machines)*goal -> larger value -> slower binary search
     # min(machines)*goal -> smaller value -> faster binary search
-    
+
     ans = 0
 
     while low <= high:
