@@ -8,24 +8,26 @@ def ship_within_days(weights, days):
     ans = high
 
     while low <= high:
-        mid = (low+high)//2
 
-        if canShip(weights, days, mid):
-            ans = mid
-            high = mid - 1
-        else:
-            low = mid + 1
-    
-    return ans
+        # candidate ship capacity
+        mid = (low + high) // 2
 
-def canShip(weights, days, capacity):
-    d = 1
-    curr = 0
-    for w in weights:
-        if curr+w > capacity:
-            d += 1
-            curr = w
-        else:
+        d = 1       # number of days required
+        curr = 0    # current load for the day
+
+        for w in weights:
             curr += w
-    
-    return d <= days
+
+            # if capacity exceeded → start new day
+            if curr > mid:
+                d += 1
+                curr = w
+
+        # if we can ship within allowed days
+        if d <= days:
+            ans = mid       # valid answer
+            high = mid - 1  # try smaller capacity
+        else:
+            low = mid + 1   # increase capacity
+
+    return ans
