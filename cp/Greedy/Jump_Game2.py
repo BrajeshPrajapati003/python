@@ -9,7 +9,12 @@ def jump(nums):
     farthest = 0 # farthest reachable idx
 
     # we don't need to process last idx
+    # we count the jump that reaches the last idx, not a jump from it
     for i in range(len(nums)-1):
+
+        # can't move further -> unreachable
+        if i > farthest:
+            return -1
 
         # update farthest reachable position
         farthest = max(farthest, i+nums[i])

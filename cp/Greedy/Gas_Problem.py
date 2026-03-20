@@ -3,7 +3,7 @@ Given 2 arrays:
     gas[i] -> gas available at station i
     cost[i] -> gas needed to travel to next station.
 You start with an empty tank.
-Goal: Find the stating gas station idx from which you can complete the full circle.
+Goal: Find the starting gas station idx from which you can complete the full circle.
 '''
 def canCompleteCircle(gas, cost):
 
