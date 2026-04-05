@@ -88,5 +88,3 @@ def counting_sort(nums):
 
     return sorted_nums
 
-
-

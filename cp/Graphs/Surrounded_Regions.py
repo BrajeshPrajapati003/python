@@ -38,4 +38,3 @@ def dfs_mark(board, i, j):
 
     dfs_mark(board, i-1, j); dfs_mark(board, i+1, j)
     dfs_mark(board, i, j-1), dfs_mark(board, i, j+1)
-
