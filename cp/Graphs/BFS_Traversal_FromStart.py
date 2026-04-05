@@ -1,5 +1,5 @@
 '''
-BFS traversal in a graph
+BFS traversal in a graph from a given node
 '''
 from collections import deque
 
@@ -32,7 +32,6 @@ for _ in range(e):
 
     graph[u].append(v) # edge u -> v
     graph[v].append(u) # edge v -> u (undirected)
-
 
 start = int(input()) # starting node
 
