@@ -7,7 +7,7 @@ If all land or all water -> return -1
 from collections import deque
 from typing import List
 
-def maxDistance(self, grid: List[List[int]]) -> int:
+def maxDistance(grid: List[List[int]]) -> int:
     n = len(grid); m = len(grid[0])
     q = deque()
 

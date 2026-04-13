@@ -8,7 +8,7 @@ You can move in 8 directions: up, down, left, right, diagonals
 from collections import deque
 from typing import List
 
-def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
+def shortestPathBinaryMatrix(grid: List[List[int]]) -> int:
     n = len(grid)
 
     # edge case - check start cell
