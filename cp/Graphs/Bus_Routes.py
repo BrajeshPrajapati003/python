@@ -26,7 +26,7 @@ def numBusesToDestination(routes, src, target):
 
     # start with all buses that have src stop
     for bus in stop_to_buses[src]:
-        q.append((bus, i)) # (bus, buses taken)
+        q.append((bus, 1)) # (bus, buses taken)
         vis_buses.add(bus)
 
     while q:
