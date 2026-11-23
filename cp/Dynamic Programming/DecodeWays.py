@@ -1,4 +1,5 @@
 '''
+LC 91. Decode Ways
 A string containing digits from 0-9 can be decoded into letters using the mapping:
     1 → A
     2 → B
@@ -104,7 +105,7 @@ def decodeConstantSpace(s):
     if n == 0 or s[0] == '0':
         return 0
     
-    prev2, prev1 = 0, 1
+    prev2, prev1 = 1, 1
     for i in range(1, n+1):
         curr = 0
 
@@ -125,3 +126,7 @@ def decodeConstantSpace(s):
 
 str = input().strip()
 print(numDecodings(str))
+
+# NOTE:
+# Never update your previous DP states while calculating the current state. 
+# Calculate curr first, then shift the previous states forward.
