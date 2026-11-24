@@ -15,8 +15,10 @@ def ninjaTraining(points):
     # return ninjaTrainingForwardMemoization(points, -1, 0, dp)
 
     # return ninjaTrainingForwardTabulation(points)
-    return ninjaTrainingBackwardTabulation(points)
+    # return ninjaTrainingBackwardTabulation(points)
     # return ninjaTrainingConstantSpace(points)
+
+    return ninjaTrainingBackwardRecursion(points, 3, len(points)-1)
 
 
 def ninjaTrainingForwardRecursion(points, last, d):
@@ -37,6 +39,22 @@ def ninjaTrainingForwardRecursion(points, last, d):
 
     return maxPoints
 
+def ninjaTrainingBackwardRecursion(points, last, day):
+    if day == 0:
+        maxi = 0
+        for task in range(3):
+            if task != last:
+                maxi = max(maxi, points[0][task])
+        
+        return maxi
+    
+    maxi = 0
+    for task in range(3):
+        if task != last:
+            point = points[day][task] + ninjaTrainingBackwardRecursion(points, task, day-1)
+            maxi = max(point, maxi)
+
+    return maxi
 
 def ninjaTrainingForwardMemoization(points, last, d, dp):
 
